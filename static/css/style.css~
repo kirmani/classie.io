@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'HelveticaNeue-Light';
+    src: url('../fonts/HelveticaNeue.ttf');
+    font-weight: 300; 
+}
+
+body {
+    /* background: url(../img/bg.jpg) no-repeat center center fixed; */
+     background: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ), url(../img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Ubuntu Condensed', 'HelveticaNeue-Light', Verdana, Helvetica, sans-serif;
+    /* border-top: 3px solid #e22c29; */
+    margin: 0;
+}
+
+#slug {
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: 80px;
+    text-align: center;
+    width: 100%;
+    font-size: 5.0em;
+    color: #DB4C2C;
+}
+
+ul.ui-autocomplete { 
+    max-height: 350px !important; 
+    overflow: auto !important;
+}
+
+.card {
+	width: auto;
+	height: auto;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+    background: #FFFEFB;
+    margin: 2% 0;
+    padding: 15px;
+}
+
+.homepage {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    margin-top: -30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+	position: relative;
+	height: 100%;
+    margin: 0 auto;
+}
+
+#data-container {
+    height: auto;
+    padding: 15px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+#prediction-container {
+    height: auto;
+    padding: 15px;
+}
+
+#search {
+    height: 100%;
+    width: 100%;
+    font-family: 'HelveticaNeue-Light', Verdana, Helvetica, sans-serif;
+    font-size: 200%;
+    border: none;
+    transition: 0.35s all ease-in-out;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+    padding: 15px;
+    background: #FFFEFB;
+}
+
+#search:focus {
+	outline: 0;
+    /* box-shadow: 0px 0px 30px 0 rgba(191, 87, 0, 0.5) */
+    box-shadow: 0px 0px 30px 0 rgba(100, 100, 100, 0.5)
+}
+
+#search-container {
+    height: 60px;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.is-teaching {
+    background-color: #A5D6A7;
+}
+
+.not-teaching {
+    background-color: #EF9A9A;
+}
+
+.is-teaching, .not-teaching {
+    text-align: center;
+}
+
+tr, td {
+    border: none;
+    margin: none;
+      padding: 3px;
+}
+
+thead {
+    border-bottom: 2px solid #333;
+}
+
+.instructor {
+    border-right: 2px solid #333;
+}
+
+table {
+    margin: 0 auto !important;
+}
+
+.course-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+#card-container{
+
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,table,label {
+
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,table {
+   font-family: inherit;
+   font-size: inherit;
+   padding:0;
+   margin:0;
+    border-collapse: collapse;
+}
+
+h1 {
+    font-size:60px;
+    color: #000000;
+    font-weight:lighter;
+    margin-left: 0px;
+}
+
+h2 {
+    font-size:28px;
+    font-weight:bold;
+    text-align:left;
+    color:#1c1c1c;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size:20px;
+    font-weight: bold;
+}
+
+h4{
+    font-size:18px;
+    font-weight: lighter;
+    text-align:left;
+    color:#333;
+}
+
+h4 span {
+    color: #666;
+    font-size: 0.8em;
+    font-weight: normal;
+    /* margin-left: 5px; */
+}
+
+h5{
+    font-size:16px;
+    font-weight: lighter;
+    font-style:italic;
+    text-align:left;
+    color:#333;
+}
+
+h6{
+    font-size:15px;
+    font-weight: lighter;
+    font-style:italic;
+    text-align:left;
+    color:#333;
+}
+
+p {
+    font-size:16px;
+    font-weight:300;
+    line-height:1.5em;  
+    color:#1c1c1c;
+}
+
+ul {
+    padding:0;
+    margin: 0 0 10px 25px;
+}

@@ -1,0 +1,46 @@
+<html ng-app="ClassieApp" ng-controller="AppCtrl">
+	<head>
+		<title>Classie</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <!--Fonts Begin-->
+        <script src="//use.typekit.net/zgq6amz.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        <script src="/static/js/controllers.js"></script>
+        <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+	    <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-58448322-3', 'auto');
+            ga('send', 'pageview');
+            
+        </script>
+    </head>
+	{% raw %}
+    <body>
+        <div class="container homepage">
+            <div class="tk-gothic-open-shaded" id="slug">Classie</div>
+            <div class="card homepage" id="search-container">
+                <form action="http://classie.io/course" method="GET">
+                    <input placeholder="Search..." name="id" id="search" ng-model="search.query" type="text" autocomplete="off"/>
+                </form>
+            </div>
+        </div>
+	</body>
+    <script>
+    function addAutocomplete() {    
+        var scope = angular.element($("body")).scope();
+        courses = scope['courses'];
+        $( "#search" ).autocomplete({
+            source: courses,
+            minLength: 2
+        });
+    }
+    </script>
+    {% endraw %}
+</html>
